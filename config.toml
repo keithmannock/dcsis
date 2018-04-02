@@ -3,14 +3,14 @@
 
 # The URL of your website.
 # End your URL with a `/` trailing slash, e.g. `https://example.com/`.
-baseurl = "/"
+baseurl = "http://www.dcs.bbk.ac.uk/~keith/" 
 
 # Title of your site
-title = "Academic"
+title = "Keith Leonard Mannock"
 
 # Your copyright notice - appears in site footer.
 # To display a copyright symbol, type `&copy;`.
-copyright = "&copy; 2018"
+copyright = "&copy; 1992-2018 Keith Mannock"
 
 theme = "academic"
 enableEmoji = true
@@ -23,7 +23,7 @@ paginate = 10
 disqusShortname = ""
 
 # Enable analytics by entering your Google Analytics tracking ID
-googleAnalytics = ""
+googleAnalytics = "UA-116744422-1"
 
 # Default language to use (if you setup multilingual support)
 defaultContentLanguage = "en"
@@ -50,24 +50,24 @@ defaultContentLanguageInSubdir = false
   font = "default"
 
   # Your details.
-  name = "Lena Smith"
-  role = "Professor of Artificial Intelligence"
+  name = "Keith Leonard Mannock"
+  role = "Lecturer in Computer Science"
 
   # Organizations/Affiliations.
   #   Separate multiple entries with a comma, using the form: `[ {name="Org1", url=""}, {name="Org2", url=""} ]`.
-  organizations = [ { name = "Stanford University", url = "" } ]
+  organizations = [ { name = "Birkbeck, University of London", url = "http://www.bbk.ac.uk" } ]
 
-  gravatar = false  # Get your avatar from Gravatar.com? (true/false)
+  gravatar = true  # Get your avatar from Gravatar.com? (true/false)
   avatar = "portrait.jpg"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
-  email = "test@example.org"
-  address = "Building 1 Room 1, Stanford University, California, 90210, USA"
-  office_hours = "Monday 10:00 to 13:00 or email for appointment"
-  phone = "888 888 88 88"
-  skype = "echo123"
+  email = "keith@dcs.bbk.ac.uk"
+  address = "Room MAL157, 1st floor, Malet Street, London WC1E 7HX, UK"
+  office_hours = "Please use the online booking system or email for an appointment"
+  phone = "+44.20.7631.6713"
+  skype = "keithmannock"
   telegram = ""
 
   # Enable Keybase in Contact widget by entering your keybase.io username.
-  keybase = ""
+  keybase = "keithmannock"
 
   # Discussion link (e.g. link to a forum, mailing list, or chat).
   #   Uncomment line below to use.
@@ -92,17 +92,17 @@ defaultContentLanguageInSubdir = false
   #   1: Google Maps
   #   2: OpenStreetMap (Mapnik)
   #   3: OpenStreetMap (Mapbox)
-  map = 0
-  map_api_key = ""
-  latitude = "37.4275"
-  longitude = "-122.1697"
+  map = 1
+  map_api_key = "AIzaSyAbfZPH0Av_W77X5vJOFuZ-5O5w4zfbC1o"
+  latitude = "51.522363"
+  longitude = "-0.130672"
   zoom = 15
 
   # Date and time format (refer to Go's date format: http://fuckinggodateformat.com )
   #   Examples: "Mon, Jan 2, 2006" or "2006-01-02"
-  date_format = "Jan 2, 2006"
+  date_format = "Mon, Jan 2, 2006"
   #   Examples: "3:04 pm" or "15:04"
-  time_format = "3:04 PM"
+  time_format = "3:04 pm"
 
   # Show estimated reading time for posts?
   reading_time = true
@@ -111,11 +111,11 @@ defaultContentLanguageInSubdir = false
   comment_count = true
 
   # Display next/previous section pager?
-  section_pager = false
+  section_pager = true
 
   # Enable global LaTeX math rendering?
   #   If false, you can enable it locally on a per page basis.
-  math = false
+  math = true
 
   # Highlight.js options
   #   highlight
@@ -145,8 +145,8 @@ defaultContentLanguageInSubdir = false
   #   For more info on the highlighting options, see:
   #   https://sourcethemes.com/academic/post/writing-markdown-latex/#highlighting-options
   highlight = true
-  highlight_languages = []
-  # highlight_style = "github"
+  highlight_languages = ["java", "swift", "scala", "kotlin", "go", "lisp", "python"]
+  highlight_style = "github"
 
   # Enable native social sharing buttons?
   sharing = true
@@ -176,7 +176,7 @@ defaultContentLanguageInSubdir = false
   # Configuration of talk pages.
   [params.talks]
     # Show talk time?
-    time = true
+    time = false
 
   # Configuration of publication pages.
   [params.publications]
@@ -194,7 +194,7 @@ defaultContentLanguageInSubdir = false
     #   1 = Detailed
     #   2 = APA
     #   3 = MLA
-    publication_format = 3
+    publication_format = 0
 
   # Social/Academic Networking
   #
@@ -217,12 +217,17 @@ defaultContentLanguageInSubdir = false
   [[params.social]]
     icon = "envelope"
     icon_pack = "fa"
-    link = "mailto:test@example.org"
+    link = "mailto:keith@dcs.bbk.ac.uk"
 
   [[params.social]]
     icon = "twitter"
     icon_pack = "fa"
-    link = "//twitter.com/GeorgeCushen"
+    link = "//twitter.com/keithmannock"
+
+  [[params.social]]
+    icon = "linkedin"
+    icon_pack = "fa"
+    link = "https://linkedin.com/keithmannock"
 
   [[params.social]]
     icon = "google-scholar"
@@ -232,7 +237,7 @@ defaultContentLanguageInSubdir = false
   [[params.social]]
     icon = "github"
     icon_pack = "fa"
-    link = "//github.com/gcushen"
+    link = "//github.com/keithmannock"
 
 
 # Navigation Links
@@ -249,23 +254,24 @@ defaultContentLanguageInSubdir = false
   weight = 1
 
 [[menu.main]]
-  name = "Publications"
-  url = "#publications_selected"
+  name = "Courses"
+  url = "#courses"
   weight = 2
 
 [[menu.main]]
-  name = "Posts"
-  url = "#posts"
+  name = "Research"
+  url = "#projects"
   weight = 3
 
 [[menu.main]]
-  name = "Projects"
-  url = "#projects"
+  name = "Publications"
+  url = "#publications"
   weight = 4
 
+
 [[menu.main]]
-  name = "Teaching"
-  url = "#teaching"
+  name = "Student Projects"
+  url = "#sprojects"
   weight = 5
 
 [[menu.main]]
@@ -273,7 +279,7 @@ defaultContentLanguageInSubdir = false
   url = "#contact"
   weight = 6
 
-# Taxonomies.
+# Taxonomies
 [taxonomies]
   tag = "tags"
   category = "categories"
